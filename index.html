@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elite defense representation firm specializing in out-of-court settlements, mediation, and arbitration.">
+    <meta name="keywords" content="defense representation, mediation, arbitration, settlement negotiation, legal counsel">
+    <meta name="author" content="Defense Representation Firm">
+    <meta name="theme-color" content="#0d47a1">
+    <title>Defense Representation Firm - Professional Legal Counsel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <svg class="octopus-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Octopus head -->
+                    <circle cx="50" cy="35" r="18" fill="currentColor"/>
+                    <!-- Eyes -->
+                    <circle cx="44" cy="32" r="3" fill="white"/>
+                    <circle cx="56" cy="32" r="3" fill="white"/>
+                    <!-- Tentacles -->
+                    <path d="M 38 50 Q 28 70 32 90" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <path d="M 45 52 Q 38 75 42 95" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <path d="M 50 53 Q 50 80 50 98" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <path d="M 55 52 Q 62 75 58 95" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <path d="M 62 50 Q 72 70 68 90" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="brand-text">Defense Counsel</span>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="#counsel" class="nav-link" data-page="counsel">Our Counsel</a></li>
+                <li><a href="#services" class="nav-link" data-page="services">Services</a></li>
+                <li><a href="#about" class="nav-link" data-page="about">About Us</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+                <li><a href="#representation-request" class="nav-link" data-page="representation">Request</a></li>
+                <li><a href="#internship" class="nav-link" data-page="internship">Internship</a></li>
+            </ul>
+            
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page home-page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Professional Defense Representation</h1>
+                    <p class="hero-subtitle">Elite out-of-court settlements, mediation, and arbitration services</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="navigateTo('representation')">Request Representation</button>
+                        <button class="btn btn-secondary" onclick="navigateTo('counsel')">Meet Our Counsel</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <svg class="hero-octopus" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="70" r="35" fill="currentColor" opacity="0.1"/>
+                        <circle cx="100" cy="70" r="30" fill="currentColor" opacity="0.15" class="pulse"/>
+                        <!-- Octopus head -->
+                        <circle cx="100" cy="70" r="25" fill="currentColor"/>
+                        <!-- Eyes -->
+                        <circle cx="90" cy="65" r="5" fill="white"/>
+                        <circle cx="110" cy="65" r="5" fill="white"/>
+                        <!-- Pupils -->
+                        <circle cx="90" cy="65" r="2.5" fill="currentColor"/>
+                        <circle cx="110" cy="65" r="2.5" fill="currentColor"/>
+                        <!-- Tentacles -->
+                        <path d="M 80 90 Q 60 130 70 180" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        <path d="M 88 94 Q 70 145 80 190" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        <path d="M 100 96 Q 95 160 100 195" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        <path d="M 112 94 Q 130 145 120 190" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        <path d="M 120 90 Q 140 130 130 180" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Overview Section -->
+            <section class="overview">
+                <h2>Why Choose Us</h2>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="card-icon">⚖️</div>
+                        <h3>Expertise</h3>
+                        <p>Decades of combined experience in defense representation and legal strategy</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="card-icon">🤝</div>
+                        <h3>Settlement Focus</h3>
+                        <p>Specialized in achieving favorable out-of-court resolutions</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="card-icon">🔒</div>
+                        <h3>Confidentiality</h3>
+                        <p>Strict privacy protocols protecting your case details</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="card-icon">⏱️</div>
+                        <h3>Efficiency</h3>
+                        <p>Fast-tracked resolution processes minimizing delays</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Services Preview -->
+            <section class="services-preview">
+                <h2>Our Key Services</h2>
+                <div class="services-preview-grid">
+                    <div class="service-preview-card">
+                        <h3>Mediation</h3>
+                        <p>Neutral third-party facilitation to resolve disputes peacefully</p>
+                    </div>
+                    <div class="service-preview-card">
+                        <h3>Arbitration</h3>
+                        <p>Binding arbitration with expert arbitrators for swift resolution</p>
+                    </div>
+                    <div class="service-preview-card">
+                        <h3>Settlement Negotiation</h3>
+                        <p>Strategic negotiations to secure optimal settlement terms</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Our Counsel Page -->
+        <section id="counsel" class="page counsel-page">
+            <div class="page-header">
+                <h1>Our Counsel</h1>
+                <p>Meet our team of experienced legal professionals</p>
+            </div>
+
+            <div class="counselors-grid" id="counselorsGrid">
+                <!-- Counselor cards will be generated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Services Page -->
+        <section id="services" class="page services-page">
+            <div class="page-header">
+                <h1>Our Services</h1>
+                <p>Comprehensive defense representation solutions</p>
+            </div>
+
+            <div class="services-container">
+                <div class="service-item">
+                    <h3>Mediation Services</h3>
+                    <p>Our expert mediators facilitate constructive dialogue between parties, helping to identify common ground and reach mutually acceptable solutions. We maintain strict neutrality while guiding parties toward resolution.</p>
+                    <ul>
+                        <li>Commercial dispute mediation</li>
+                        <li>Employment conflict resolution</li>
+                        <li>Contract disputes</li>
+                        <li>Relationship and partnership conflicts</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3>Arbitration Services</h3>
+                    <p>Swift, binding arbitration conducted by experienced arbitrators. Perfect for parties seeking a faster alternative to traditional litigation with enforceable outcomes.</p>
+                    <ul>
+                        <li>Commercial arbitration</li>
+                        <li>International arbitration</li>
+                        <li>Construction disputes</li>
+                        <li>Intellectual property conflicts</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3>Settlement Negotiation</h3>
+                    <p>Strategic representation during settlement negotiations. We advocate for favorable terms while maintaining professional relationships and realistic outcome expectations.</p>
+                    <ul>
+                        <li>Pre-litigation negotiations</li>
+                        <li>During-litigation settlement talks</li>
+                        <li>Multi-party negotiations</li>
+                        <li>Complex commercial settlements</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3>Dispute Resolution Consulting</h3>
+                    <p>Expert consulting on dispute resolution strategies, process selection, and risk assessment. We help you choose the most effective resolution path for your specific situation.</p>
+                    <ul>
+                        <li>Case analysis and strategy</li>
+                        <li>Process recommendations</li>
+                        <li>Risk assessment</li>
+                        <li>Cost-benefit analysis</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3>Multi-Party Representation</h3>
+                    <p>Skilled representation in complex multi-party disputes. We navigate intricate dynamics and competing interests to achieve favorable resolutions for our clients.</p>
+                    <ul>
+                        <li>Consortium negotiations</li>
+                        <li>Complex commercial disputes</li>
+                        <li>Real estate conflicts</li>
+                        <li>Franchise disputes</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <h3>Alternative Dispute Resolution Training</h3>
+                    <p>Professional training and workshops on ADR techniques, negotiation strategies, and conflict management for organizations and legal professionals.</p>
+                    <ul>
+                        <li>Mediation training</li>
+                        <li>Negotiation workshops</li>
+                        <li>Conflict management seminars</li>
+                        <li>Team-building sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Page -->
+        <section id="about" class="page about-page">
+            <div class="page-header">
+                <h1>About Our Firm</h1>
+                <p>Excellence in defense representation since 1995</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-section">
+                    <h2>Our Story</h2>
+                    <p>Founded in 1995, Defense Counsel emerged from a vision to revolutionize how disputes are resolved. Our founders recognized that litigation, while sometimes necessary, often proves costly, time-consuming, and relationship-damaging. They established our firm to provide alternatives—effective, professional, and dignified pathways to resolution.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Our Mission</h2>
+                    <p>To provide superior defense representation through innovative dispute resolution, ensuring our clients achieve favorable outcomes while preserving relationships and minimizing costs. We believe in the power of strategic negotiation, expert mediation, and professional advocacy to resolve even the most complex disputes.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Our Values</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <h3>Integrity</h3>
+                            <p>Unwavering honesty and ethical conduct in all professional dealings</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Excellence</h3>
+                            <p>Commitment to highest standards of legal practice and representation</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Confidentiality</h3>
+                            <p>Sacred protection of client information and case details</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Respect</h3>
+                            <p>Professional courtesy toward all parties involved in disputes</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Innovation</h3>
+                            <p>Continuous exploration of effective new resolution methods</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Client-Focused</h3>
+                            <p>Deep commitment to understanding and serving client needs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>What Makes Us Unique</h2>
+                    <p>In a legal landscape dominated by courtroom battles, we've chosen a different path. Our firm specializes exclusively in out-of-court representation, giving us unparalleled expertise in alternative dispute resolution. With a team of experienced mediators, arbitrators, and negotiators, we focus on:</p>
+                    <ul class="unique-list">
+                        <li><strong>Efficiency:</strong> Resolving cases faster than traditional litigation</li>
+                        <li><strong>Cost-Effectiveness:</strong> Significantly reducing legal costs for our clients</li>
+                        <li><strong>Confidentiality:</strong> Keeping disputes private, away from public courtrooms</li>
+                        <li><strong>Relationship Preservation:</strong> Finding solutions that allow parties to move forward</li>
+                        <li><strong>Expertise:</strong> Deep specialization in dispute resolution methodologies</li>
+                        <li><strong>Accessibility:</strong> Personalized attention regardless of case size</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Page -->
+        <section id="contact" class="page contact-page">
+            <div class="page-header">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Office Location</h3>
+                        <p>123 Justice Boulevard<br>Suite 500<br>New York, NY 10001</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p><a href="tel:+12125551234">(212) 555-1234</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p><a href="mailto:info@defensecounsel.com">info@defensecounsel.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>🕐 Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290255!2d-74.00601592346084!3d40.71455307130898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27d9f64d8b%3A0xd134e199376c6d8!2s123%20Justice%20Boulevard%2C%20New%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1701699825000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Request Representation Page -->
+        <section id="representation-request" class="page representation-page">
+            <div class="page-header">
+                <h1>Request Representation</h1>
+                <p>Start your path to resolution</p>
+            </div>
+
+            <div class="form-container">
+                <form id="representationForm" class="representation-form">
+                    <div class="form-group">
+                        <label for="repName">Full Name *</label>
+                        <input type="text" id="repName" name="name" required aria-label="Full name">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="repEmail">Email Address *</label>
+                            <input type="email" id="repEmail" name="email" required aria-label="Email address">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="repPhone">Phone Number *</label>
+                            <input type="tel" id="repPhone" name="phone" required aria-label="Phone number">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caseType">Case Type *</label>
+                        <select id="caseType" name="caseType" required aria-label="Case type">
+                            <option value="">-- Select Case Type --</option>
+                            <option value="commercial">Commercial Dispute</option>
+                            <option value="employment">Employment Conflict</option>
+                            <option value="contract">Contract Dispute</option>
+                            <option value="partnership">Partnership Conflict</option>
+                            <option value="realestate">Real Estate Dispute</option>
+                            <option value="intellectual">Intellectual Property</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="caseTypeError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caseDescription">Case Description *</label>
+                        <textarea id="caseDescription" name="caseDescription" rows="5" placeholder="Please provide a brief description of your case..." required aria-label="Case description"></textarea>
+                        <span class="error-message" id="caseDescriptionError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMethod">Preferred Contact Method *</label>
+                        <select id="contactMethod" name="contactMethod" required aria-label="Preferred contact method">
+                            <option value="">-- Select Contact Method --</option>
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                            <option value="both">Both</option>
+                        </select>
+                        <span class="error-message" id="contactMethodError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgency">Urgency Level *</label>
+                        <select id="urgency" name="urgency" required aria-label="Urgency level">
+                            <option value="">-- Select Urgency --</option>
+                            <option value="low">Low (flexible timeline)</option>
+                            <option value="medium">Medium (within 2 weeks)</option>
+                            <option value="high">High (urgent matter)</option>
+                        </select>
+                        <span class="error-message" id="urgencyError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Internship Applications Page -->
+        <section id="internship" class="page internship-page">
+            <div class="page-header">
+                <h1>Internship Applications</h1>
+                <p>Join our team and gain valuable legal experience</p>
+            </div>
+
+            <div class="form-container">
+                <form id="internshipForm" class="internship-form">
+                    <div class="form-group">
+                        <label for="intName">Full Name *</label>
+                        <input type="text" id="intName" name="name" required aria-label="Full name">
+                        <span class="error-message" id="intNameError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="intEmail">Email Address *</label>
+                            <input type="email" id="intEmail" name="email" required aria-label="Email address">
+                            <span class="error-message" id="intEmailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="intPhone">Phone Number *</label>
+                            <input type="tel" id="intPhone" name="phone" required aria-label="Phone number">
+                            <span class="error-message" id="intPhoneError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="educationLevel">Education Level *</label>
+                            <select id="educationLevel" name="educationLevel" required aria-label="Education level">
+                                <option value="">-- Select Level --</option>
+                                <option value="undergraduate">Undergraduate</option>
+                                <option value="lawstudent">Law Student</option>
+                                <option value="graduate">Graduate Student</option>
+                                <option value="recent">Recent Graduate</option>
+                            </select>
+                            <span class="error-message" id="educationLevelError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="school">University/School *</label>
+                            <input type="text" id="school" name="school" placeholder="e.g., Harvard Law School" required aria-label="University or school">
+                            <span class="error-message" id="schoolError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="yearOfStudy">Year of Study *</label>
+                        <select id="yearOfStudy" name="yearOfStudy" required aria-label="Year of study">
+                            <option value="">-- Select Year --</option>
+                            <option value="1st">1st Year</option>
+                            <option value="2nd">2nd Year</option>
+                            <option value="3rd">3rd Year</option>
+                            <option value="graduated">Graduated</option>
+                        </select>
+                        <span class="error-message" id="yearOfStudyError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resumeFile">Resume (PDF or DOC) *</label>
+                        <input type="file" id="resumeFile" name="resume" accept=".pdf,.doc,.docx" required aria-label="Resume upload">
+                        <span class="error-message" id="resumeFileError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="coverLetter">Cover Letter *</label>
+                        <textarea id="coverLetter" name="coverLetter" rows="5" placeholder="Tell us why you're interested in our firm..." required aria-label="Cover letter"></textarea>
+                        <span class="error-message" id="coverLetterError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Areas of Interest *</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="interest1" name="interests" value="mediation" required aria-label="Mediation interest">
+                                <label for="interest1">Mediation</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="interest2" name="interests" value="arbitration" aria-label="Arbitration interest">
+                                <label for="interest2">Arbitration</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="interest3" name="interests" value="negotiation" aria-label="Negotiation interest">
+                                <label for="interest3">Settlement Negotiation</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="interest4" name="interests" value="consulting" aria-label="Consulting interest">
+                                <label for="interest4">Dispute Resolution Consulting</label>
+                            </div>
+                        </div>
+                        <span class="error-message" id="interestsError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="availability">Availability *</label>
+                        <input type="text" id="availability" name="availability" placeholder="e.g., Summer 2024, Part-time during school year" required aria-label="Availability">
+                        <span class="error-message" id="availabilityError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                    <div class="form-message" id="internshipFormMessage"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Defense Counsel</h4>
+                <p>Professional defense representation specializing in out-of-court settlements and dispute resolution.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#counsel">Our Counsel</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+12125551234">(212) 555-1234</a></li>
+                    <li><a href="mailto:info@defensecounsel.com">info@defensecounsel.com</a></li>
+                    <li>123 Justice Boulevard, Suite 500<br>New York, NY 10001</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Defense Counsel. All rights reserved. | Professional Legal Services</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
